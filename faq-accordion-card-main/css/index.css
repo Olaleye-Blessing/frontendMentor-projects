@@ -33,13 +33,16 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
-  min-height: 60rem;
   background-color: #af67e9;
   background-image: linear-gradient(189deg, #af67e9, #6565e7);
+  -webkit-padding-before: 3rem;
+          padding-block-start: 3rem;
+  -webkit-padding-after: 7rem;
+          padding-block-end: 7rem;
 }
 
 .FAQ {
+  font-size: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,4 +77,66 @@ li {
   font-size: 3.1rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
+}
+
+.FAQ__lists {
+  -webkit-padding-after: 2rem;
+          padding-block-end: 2rem;
+}
+
+.FAQ__list {
+  -webkit-border-after: 0.1rem inset rgba(0, 0, 0, 0.4);
+          border-block-end: 0.1rem inset rgba(0, 0, 0, 0.4);
+  padding: 1.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+.FAQ__question {
+  position: relative;
+  color: #4a4b5e;
+  -webkit-padding-end: 2rem;
+          padding-inline-end: 2rem;
+}
+
+.FAQ__question:hover {
+  cursor: pointer;
+}
+
+.FAQ__question::after {
+  display: block;
+  content: url(../images/icon-arrow-down.svg);
+  position: absolute;
+  top: 0;
+  right: 0.1rem;
+}
+
+.FAQ__checkbox {
+  display: none;
+}
+
+.FAQ__answer {
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+  display: none;
+  width: 90%;
+}
+
+.FAQ__checkbox:checked ~ .FAQ__answer {
+  display: block;
+}
+
+.FAQ__checkbox:checked + .FAQ__question {
+  color: #333;
+  font-weight: 700;
+}
+
+.FAQ__checkbox:checked + .FAQ__question::after {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
 }
