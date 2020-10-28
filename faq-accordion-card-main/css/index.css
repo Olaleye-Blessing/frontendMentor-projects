@@ -16,5 +16,62 @@ html {
 body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 1.2rem;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  min-height: 60rem;
   background-color: #af67e9;
+  background-image: linear-gradient(189deg, #af67e9, #6565e7);
+}
+
+.FAQ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  border-radius: 2rem;
+  width: 90%;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.9rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0.2rem 0.2rem 0.9rem rgba(0, 0, 0, 0.3);
+  padding: 0 1.2rem 3rem;
+  margin-top: 12rem;
+}
+
+.FAQ__background {
+  height: 20rem;
+  width: 90%;
+  background-image: url(../images/illustration-woman-online-mobile.svg), url(../images/bg-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 0%, 51% 100%;
+  margin-top: -11rem;
+}
+
+.FAQ__header {
+  text-align: center;
+  -webkit-margin-after: 3rem;
+          margin-block-end: 3rem;
+  -webkit-margin-before: 3rem;
+          margin-block-start: 3rem;
+  font-size: 3.1rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
 }
