@@ -143,6 +143,7 @@ li {
 
 @media screen and (min-width: 900px) {
   .FAQ {
+    margin-top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -163,6 +164,9 @@ li {
     background-repeat: no-repeat;
     background-position: 7% 79%, center 90%, bottom -10px left 0%;
     background-size: 30%, 90%, 100%;
+    -webkit-margin-start: -10%;
+            margin-inline-start: -10%;
+    margin-top: 0;
   }
   .FAQ__main {
     width: 45%;
