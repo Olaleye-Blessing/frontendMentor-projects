@@ -37,8 +37,8 @@ li {
   background-image: linear-gradient(189deg, #af67e9, #6565e7);
   -webkit-padding-before: 3rem;
           padding-block-start: 3rem;
-  -webkit-padding-after: 7rem;
-          padding-block-end: 7rem;
+  -webkit-padding-after: 5rem;
+          padding-block-end: 5rem;
 }
 
 .FAQ {
@@ -102,10 +102,13 @@ li {
   color: #4a4b5e;
   -webkit-padding-end: 2rem;
           padding-inline-end: 2rem;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .FAQ__question:hover {
   cursor: pointer;
+  color: #f47c57;
 }
 
 .FAQ__question::after {
@@ -170,5 +173,14 @@ li {
   }
   .FAQ__main {
     width: 45%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main {
+    -webkit-padding-end: 1rem;
+            padding-inline-end: 1rem;
+    -webkit-padding-start: 1rem;
+            padding-inline-start: 1rem;
   }
 }
