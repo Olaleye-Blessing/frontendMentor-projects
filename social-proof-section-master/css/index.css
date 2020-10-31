@@ -17,10 +17,8 @@ body {
   font-size: 1.5rem;
   line-height: 1.4;
   font-family: "Spartan", sans-serif;
-  -webkit-padding-start: 1.7rem;
-          padding-inline-start: 1.7rem;
-  -webkit-padding-end: 1.7rem;
-          padding-inline-end: 1.7rem;
+  -webkit-padding-after: 2rem;
+          padding-block-end: 2rem;
 }
 
 .social {
@@ -28,11 +26,13 @@ body {
           padding-block-start: 7rem;
   -webkit-padding-after: 4rem;
           padding-block-end: 4rem;
+  -webkit-padding-start: 1.7rem;
+          padding-inline-start: 1.7rem;
+  -webkit-padding-end: 1.7rem;
+          padding-inline-end: 1.7rem;
   background-image: url(../images/bg-pattern-top-mobile.svg);
   background-position: left top;
   background-repeat: no-repeat;
-  -webkit-box-shadow: 0.1rem 0.1rem 1rem rgba(1, 1, 1, 0.4);
-          box-shadow: 0.1rem 0.1rem 1rem rgba(1, 1, 1, 0.4);
 }
 
 .social__words {
