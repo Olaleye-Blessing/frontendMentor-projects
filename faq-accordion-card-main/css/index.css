@@ -17,6 +17,18 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 1.2rem;
   background-image: linear-gradient(189deg, #af67e9, #6565e7);
+  min-height: 100vh;
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 ul,
@@ -131,6 +143,7 @@ li {
           margin-block-start: 1rem;
   display: none;
   width: 90%;
+  line-height: 1.6;
 }
 
 .FAQ__checkbox:checked ~ .FAQ__answer {
@@ -168,10 +181,10 @@ li {
   .FAQ__little-box {
     display: block;
     position: absolute;
-    top: 40%;
-    left: -3.9rem;
-    width: 10rem;
-    height: 6rem;
+    top: 34.5%;
+    left: -5.5rem;
+    width: 12rem;
+    height: 8rem;
     background-image: url(../images/illustration-box-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -185,7 +198,7 @@ li {
     height: 46rem;
     background-image: url(../images/illustration-woman-online-desktop.svg), url(../images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
-    background-position: left -5rem top 19%, left -37rem bottom -4rem;
+    background-position: left -5.4rem top 17.5%, left -37rem bottom -4rem;
     background-size: 90%, 175%;
   }
   .FAQ__main {
