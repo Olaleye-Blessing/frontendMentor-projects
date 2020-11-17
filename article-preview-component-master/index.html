@@ -17,16 +17,13 @@
         <title>Frontend Mentor | Article preview component</title>
 
         <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-        <style>
-            .attribution {
-                font-size: 11px;
-                text-align: center;
-            }
-            .attribution a {
-                color: hsl(228, 45%, 44%);
-            }
-        </style>
-        <link rel="stylesheet" href="css/index.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/main.css" />
+        <script src="index.js" defer></script>
     </head>
     <body>
         <main class="main">
@@ -34,44 +31,79 @@
                 <div class="article__background"></div>
                 <article class="article__main">
                     <header class="article__header">
-                        <h1>
+                        <h3>
                             Shift the overall look and feel by adding these
                             wonderful touches to furniture in your home
-                        </h1>
+                        </h3>
                     </header>
                     <p class="article__para">
-                        Shift the overall look and feel by adding these
-                        wonderful touches to furniture in your home Ever been in
-                        a room and felt like something was missing? Perhaps it
-                        felt slightly bare and uninviting. I’ve got some simple
-                        tips to help you make any room feel complete.
+                        Ever been in a room and felt like something was missing?
+                        Perhaps it felt slightly bare and uninviting. I’ve got
+                        some simple tips to help you make any room feel
+                        complete.
                     </p>
                     <section class="article__writer">
-                        <div class="article__writer-pic">
-                            <img
-                                src="images/avatar-michelle.jpg"
-                                alt="Michelle's image"
-                            />
-                        </div>
-                        <div>
-                            <div class="article__writer-name">
-                                Michelle Appleton
+                        <div class="article__writer-details">
+                            <figure class="article__writer-pic">
+                                <img
+                                    src="images/avatar-michelle.jpg"
+                                    alt="Michelle's picture"
+                                />
+                            </figure>
+                            <div class="article__writer-detail">
+                                <div class="article__writer-name">
+                                    Michelle Appleton
+                                </div>
+                                <div class="article__writer-date">
+                                    28 Jun 2020
+                                </div>
                             </div>
-                            <div class="article__writer-date">28 Jun 2020</div>
                         </div>
-                        <div class="article__share">Share</div>
+                        <div class="article__writer-share" >
+                            <figure class="article__writer-share-pic js-share" tabindex="0">
+                                <img
+                                    src="images/icon-share.svg"
+                                    alt="Share icon"
+                                />
+                            </figure>
+                            <div class="article__share-icons js-share-icons">
+                                <div>SHARE</div>
+                                <a href="#" class="article__share-container">
+                                    <img
+                                        src="images/icon-facebook.svg"
+                                        alt="facebook share icon"
+                                        class="article__share-icon"
+                                    />
+                                </a>
+                                <a href="#" class="article__share-container">
+                                    <img
+                                        src="images/icon-twitter.svg"
+                                        alt="twitter share icon"
+                                        class="article__share-icon"
+                                    />
+                                </a>
+                                <a href="#" class="article__share-container">
+                                    <img
+                                        src="images/icon-pinterest.svg"
+                                        alt="pinterest share icon"
+                                        class="article__share-icon"
+                                    />
+                                </a>
+                                <div class="js-arrow"></div>
+                            </div>
+                        </div>
                     </section>
                 </article>
             </section>
         </main>
 
-        <div class="attribution">
+        <!-- <div class="attribution">
             Challenge by
             <a
                 href="https://www.frontendmentor.io?ref=challenge"
                 target="_blank"
                 >Frontend Mentor</a
             >. Coded by <a href="#">Your Name Here</a>.
-        </div>
+        </div> -->
     </body>
 </html>
